@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 26/06/2011 22:42:31
+EESchema Schematic File Version 2  date 26/06/2011 23:12:31
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,6 +29,8 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:EnigmaMon
+LIBS:Display-cache
 EELAYER 25  0
 EELAYER END
 $Descr A4 11700 8267
@@ -43,9 +45,23 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Connection ~ 5450 1450
+$Comp
+L GND #PWR01
+U 1 1 4E07AD97
+P 5450 3950
+F 0 "#PWR01" H 5450 3950 30  0001 C CNN
+F 1 "GND" H 5450 3880 30  0001 C CNN
+	1    5450 3950
+	1    0    0    -1  
+$EndComp
+Connection ~ 5250 2300
 Wire Wire Line
-	5250 1450 8500 1450
+	4650 1550 5050 1550
+Wire Wire Line
+	5050 1550 5050 2300
+Wire Wire Line
+	5050 2300 5600 2300
+Connection ~ 5450 1450
 Wire Wire Line
 	5250 1450 5250 1800
 Connection ~ 8500 3500
@@ -106,8 +122,6 @@ Wire Wire Line
 Wire Wire Line
 	5450 2700 5600 2700
 Wire Wire Line
-	4200 3700 4200 2900
-Wire Wire Line
 	5450 3500 5600 3500
 Connection ~ 5450 3700
 Wire Wire Line
@@ -130,7 +144,30 @@ Wire Wire Line
 	8400 3300 8500 3300
 Connection ~ 8500 3300
 Wire Wire Line
-	5600 2300 5250 2300
+	8500 1450 4650 1450
+Connection ~ 5250 1450
+Wire Wire Line
+	4200 3700 4200 2700
+Wire Wire Line
+	4200 2700 4850 2700
+Wire Wire Line
+	4850 2700 4850 1650
+Wire Wire Line
+	4850 1650 4650 1650
+Connection ~ 4200 2900
+Connection ~ 5600 1900
+Connection ~ 5450 3950
+Connection ~ 5450 3700
+Connection ~ 5450 3700
+$Comp
+L CONN_3 K1
+U 1 1 4E07AA60
+P 4300 1550
+F 0 "K1" V 4250 1550 50  0000 C CNN
+F 1 "CONN_3" V 4350 1550 40  0000 C CNN
+	1    4300 1550
+	-1   0    0    1   
+$EndComp
 $Comp
 L RVAR R3
 U 1 1 4E079A0A
@@ -144,8 +181,8 @@ $Comp
 L 10SEGDISP BAR1
 U 1 1 4E079618
 P 7750 1800
-F 0 "BAR1" H 7750 1700 60  0000 C CNN
-F 1 "10SEGDISP" H 7750 3900 60  0000 C CNN
+F 0 "BAR1" H 7750 3900 60  0000 C CNN
+F 1 "10SEGDISP" H 7750 1750 60  0000 C CNN
 	1    7750 1800
 	-1   0    0    1   
 $EndComp
@@ -166,15 +203,6 @@ F 0 "R1" V 5130 2900 50  0000 C CNN
 F 1 "1.21k" V 5050 2900 50  0000 C CNN
 	1    5050 2900
 	0    1    1    0   
-$EndComp
-$Comp
-L GND #PWR01
-U 1 1 4E07735A
-P 5450 3950
-F 0 "#PWR01" H 5450 3950 30  0001 C CNN
-F 1 "GND" H 5450 3880 30  0001 C CNN
-	1    5450 3950
-	1    0    0    -1  
 $EndComp
 $Comp
 L VCC #PWR02

@@ -1,70 +1,75 @@
-# EESchema Netlist Version 1.1 created  26/06/2011 21:45:35
+# EESchema Netlist Version 1.1 created  26/06/2011 22:55:55
 (
- ( /4E079618 DIP-20__300 BAR1 10SEGDISP
-  ( 1 VCC )
-  ( 2 VCC )
-  ( 3 VCC )
-  ( 4 VCC )
-  ( 5 VCC )
-  ( 6 VCC )
-  ( 7 VCC )
-  ( 8 VCC )
-  ( 9 VCC )
-  ( 10 VCC )
-  ( 11 N-000010 )
-  ( 12 N-000009 )
-  ( 13 N-000008 )
-  ( 14 N-000007 )
-  ( 15 N-000006 )
-  ( 16 N-000005 )
-  ( 17 N-000004 )
-  ( 18 N-000003 )
-  ( 19 N-000002 )
-  ( 20 N-000011 )
+ ( /4E07AA60 $noname  K1 CONN_3 {Lib=CONN_3}
+  (    1 GND )
+  (    2 N-000010 )
+  (    3 VCC )
  )
- ( /4E076E05 DIP-18__300 IC1 LM3914
-  ( 1 N-000011 )
-  ( 2 GND )
-  ( 3 VCC )
-  ( 4 GND )
-  ( 5 N-000001 )
-  ( 6 N-000012 )
-  ( 7 N-000012 )
-  ( 8 N-000014 )
-  ( 9 VCC )
-  ( 10 N-000010 )
-  ( 11 N-000009 )
-  ( 12 N-000008 )
-  ( 13 N-000007 )
-  ( 14 N-000006 )
-  ( 15 N-000005 )
-  ( 16 N-000004 )
-  ( 17 N-000003 )
-  ( 18 N-000002 )
+ ( /4E079A0A $noname  R3 RVAR {Lib=RVAR}
+  (    1 VCC )
+  (    2 N-000010 )
  )
- ( /4E0774AA R3 R1 1.21k
-  ( 1 N-000012 )
-  ( 2 N-000014 )
+ ( /4E079618 $noname  BAR1 10SEGDISP {Lib=10SEGDISP}
+  (    1 VCC )
+  (    2 VCC )
+  (    3 VCC )
+  (    4 VCC )
+  (    5 VCC )
+  (    6 VCC )
+  (    7 VCC )
+  (    8 VCC )
+  (    9 VCC )
+  (   10 VCC )
+  (   11 N-000011 )
+  (   12 N-000001 )
+  (   13 N-000002 )
+  (   14 N-000003 )
+  (   15 N-000004 )
+  (   16 N-000005 )
+  (   17 N-000006 )
+  (   18 N-000007 )
+  (   19 N-000013 )
+  (   20 N-000008 )
  )
- ( /4E0774EA R3 R2 3.83k
-  ( 1 N-000014 )
-  ( 2 GND )
+ ( /4E0774EA $noname  R2 3.83k {Lib=R}
+  (    1 N-000014 )
+  (    2 ? )
  )
- ( /4E079A0A RV2X4 R3 RVAR
-  ( 1 VCC )
-  ( 2 N-000001 )
+ ( /4E0774AA $noname  R1 1.21k {Lib=R}
+  (    1 N-000016 )
+  (    2 N-000014 )
+ )
+ ( /4E076E05 $noname  IC1 LM3914 {Lib=LM3914}
+  (    1 N-000011 )
+  (    2 GND )
+  (    3 VCC )
+  (    4 GND )
+  (    5 N-000010 )
+  (    6 N-000016 )
+  (    7 N-000016 )
+  (    8 N-000014 )
+  (    9 VCC )
+  (   10 N-000008 )
+  (   11 N-000013 )
+  (   12 N-000007 )
+  (   13 N-000006 )
+  (   14 N-000005 )
+  (   15 N-000004 )
+  (   16 N-000003 )
+  (   17 N-000002 )
+  (   18 N-000001 )
  )
 )
 *
 { Allowed footprints by component:
-$component R1
+$component R2
  R?
  SM0603
  SM0805
  R?-*
  SM1206
 $endlist
-$component R2
+$component R1
  R?
  SM0603
  SM0805
@@ -73,3 +78,67 @@ $component R2
 $endlist
 $endfootprintlist
 }
+{ Pin List by Nets
+Net 1 "" ""
+ IC1 18
+ BAR1 12
+Net 2 "" ""
+ IC1 17
+ BAR1 13
+Net 3 "" ""
+ BAR1 14
+ IC1 16
+Net 4 "" ""
+ BAR1 15
+ IC1 15
+Net 5 "" ""
+ BAR1 16
+ IC1 14
+Net 6 "" ""
+ IC1 13
+ BAR1 17
+Net 7 "" ""
+ IC1 12
+ BAR1 18
+Net 8 "" ""
+ BAR1 20
+ IC1 10
+Net 9 "VCC" "VCC"
+ BAR1 9
+ BAR1 8
+ BAR1 10
+ R3 1
+ K1 3
+ BAR1 1
+ BAR1 2
+ BAR1 3
+ BAR1 4
+ BAR1 5
+ BAR1 6
+ IC1 9
+ IC1 3
+ BAR1 7
+Net 10 "" ""
+ R3 2
+ IC1 5
+ K1 2
+Net 11 "" ""
+ IC1 1
+ BAR1 11
+Net 13 "" ""
+ BAR1 19
+ IC1 11
+Net 14 "" ""
+ R2 1
+ R1 2
+ IC1 8
+Net 15 "GND" "GND"
+ IC1 2
+ K1 1
+ IC1 4
+Net 16 "" ""
+ IC1 6
+ IC1 7
+ R1 1
+}
+#End
