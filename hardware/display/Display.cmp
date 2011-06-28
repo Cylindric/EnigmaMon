@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPCB (2011-04-29 BZR 2986)-stable date = 26/06/2011 21:45:35
+Cmp-Mod V01 Created by CvPCB (2011-04-29 BZR 2986)-stable date = 28/06/2011 08:07:46
 
 BeginCmp
 TimeStamp = /4E079618;
@@ -15,6 +15,13 @@ IdModule  = DIP-18__300;
 EndCmp
 
 BeginCmp
+TimeStamp = /4E07AA60;
+Reference = K1;
+ValeurCmp = CONN_3;
+IdModule  = 3PIN_6mm;
+EndCmp
+
+BeginCmp
 TimeStamp = /4E0774AA;
 Reference = R1;
 ValeurCmp = 1.21k;
@@ -26,13 +33,6 @@ TimeStamp = /4E0774EA;
 Reference = R2;
 ValeurCmp = 3.83k;
 IdModule  = R3;
-EndCmp
-
-BeginCmp
-TimeStamp = /4E079A0A;
-Reference = R3;
-ValeurCmp = RVAR;
-IdModule  = RV2X4;
 EndCmp
 
 EndListe
