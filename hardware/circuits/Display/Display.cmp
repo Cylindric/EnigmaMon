@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPCB (2011-04-29 BZR 2986)-stable date = 28/06/2011 08:07:46
+Cmp-Mod V01 Created by CvPCB (2011-04-29 BZR 2986)-stable date = 28/06/2011 19:16:29
 
 BeginCmp
 TimeStamp = /4E079618;
@@ -8,8 +8,22 @@ IdModule  = DIP-20__300;
 EndCmp
 
 BeginCmp
+TimeStamp = /4E0A12D2;
+Reference = BAR2;
+ValeurCmp = 10SEGDISP;
+IdModule  = DIP-20__300;
+EndCmp
+
+BeginCmp
 TimeStamp = /4E076E05;
 Reference = IC1;
+ValeurCmp = LM3914;
+IdModule  = DIP-18__300;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E0A12DC;
+Reference = IC2;
 ValeurCmp = LM3914;
 IdModule  = DIP-18__300;
 EndCmp

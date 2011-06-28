@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 28/06/2011 19:05:44
+EESchema Schematic File Version 2  date 28/06/2011 20:04:41
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -56,31 +56,51 @@ Wire Wire Line
 Wire Wire Line
 	6100 5600 6200 5600
 Wire Wire Line
-	6200 3350 6100 3350
+	5950 3350 6100 3350
 Wire Wire Line
-	6200 2950 6100 2950
+	5950 2950 6100 2950
 Wire Wire Line
-	6200 2550 6100 2550
+	5950 2550 6100 2550
 Wire Wire Line
-	6200 2150 6100 2150
+	5950 2150 6100 2150
 Wire Wire Line
-	6200 1750 6100 1750
+	5950 1750 6100 1750
 Wire Wire Line
-	6200 1550 6100 1550
-Connection ~ 7600 3150
-Connection ~ 7600 2950
-Connection ~ 7600 2750
-Connection ~ 7600 2550
-Connection ~ 7600 2350
-Connection ~ 7600 2150
-Connection ~ 7600 1950
-Connection ~ 7600 1750
-Connection ~ 7600 1550
+	5950 1550 6100 1550
+Connection ~ 7350 3150
+Connection ~ 7350 2950
+Connection ~ 7350 2750
+Connection ~ 7350 2550
+Connection ~ 7350 2350
+Connection ~ 7350 2150
+Connection ~ 7350 1950
+Connection ~ 7350 1750
+Connection ~ 7350 1550
 Connection ~ 5100 1100
 Wire Wire Line
-	1250 1100 7600 1100
+	7600 1100 5100 1100
 Wire Wire Line
-	7600 1100 7600 3350
+	5100 1100 2050 1100
+Wire Wire Line
+	2050 1100 1950 1100
+Wire Wire Line
+	1950 1100 1250 1100
+Wire Wire Line
+	7350 3350 7550 3150
+Wire Wire Line
+	7350 3150 7350 2950
+Wire Wire Line
+	7350 1550 7600 2750
+Wire Wire Line
+	7600 2350 7600 2150
+Wire Wire Line
+	7600 2150 7600 1950
+Wire Wire Line
+	7600 1950 7600 1750
+Wire Wire Line
+	7600 1750 7600 1550
+Wire Wire Line
+	7600 1550 7600 1100
 Connection ~ 1950 1100
 Wire Wire Line
 	1950 1100 1950 800 
@@ -95,18 +115,26 @@ Connection ~ 2050 2550
 Wire Wire Line
 	2050 2550 2050 2350
 Wire Wire Line
-	2050 3600 2050 3150
+	2050 3600 2050 3350
 Wire Wire Line
-	2200 3350 800  3350
+	2050 3350 2050 3150
 Wire Wire Line
-	1400 2550 1300 2550
+	800  3350 2050 3350
+Wire Wire Line
+	2050 3350 2200 3350
+Wire Wire Line
+	1400 2550 1350 2550
+Wire Wire Line
+	1350 2550 1300 2550
 Wire Wire Line
 	2200 2750 1350 2750
 Connection ~ 2050 1550
 Wire Wire Line
-	2200 1750 2050 1750
+	2050 1750 2200 1750
 Wire Wire Line
-	2050 1750 2050 1100
+	2050 1100 2050 1550
+Wire Wire Line
+	2050 1550 2050 1750
 Wire Wire Line
 	3600 1750 3700 1750
 Wire Wire Line
@@ -128,7 +156,9 @@ Wire Wire Line
 Wire Wire Line
 	3600 1550 3700 1550
 Wire Wire Line
-	1900 2550 2200 2550
+	1900 2550 2050 2550
+Wire Wire Line
+	2050 2550 2200 2550
 Wire Wire Line
 	2050 2350 2200 2350
 Wire Wire Line
@@ -138,13 +168,23 @@ Wire Wire Line
 	1350 2750 1350 2550
 Connection ~ 1350 2550
 Wire Wire Line
-	5100 3350 5100 1100
+	5100 3350 5100 2950
+Wire Wire Line
+	5100 2950 5100 2550
+Wire Wire Line
+	5100 2550 5100 2150
+Wire Wire Line
+	5100 2150 5100 1750
+Wire Wire Line
+	5100 1750 5100 1100
 Connection ~ 5100 1750
 Connection ~ 5100 2150
 Connection ~ 5100 2550
 Connection ~ 5100 2950
 Wire Wire Line
-	800  3350 800  2350
+	800  3350 800  2550
+Wire Wire Line
+	800  2550 800  2350
 Wire Wire Line
 	800  2350 1450 2350
 Wire Wire Line
@@ -157,16 +197,14 @@ Connection ~ 2050 3350
 Connection ~ 2050 3350
 Wire Wire Line
 	2200 1550 2050 1550
-Wire Bus Line
-	6000 1650 6000 5700
 Wire Wire Line
-	6200 1950 6100 1950
+	5950 1950 6100 1950
 Wire Wire Line
-	6200 2350 6100 2350
+	5950 2350 6100 2350
 Wire Wire Line
-	6200 2750 6100 2750
+	5950 2750 6100 2750
 Wire Wire Line
-	6200 3150 6100 3150
+	5950 3150 6100 3150
 Wire Wire Line
 	6100 5800 6200 5800
 Wire Wire Line
@@ -177,62 +215,22 @@ Wire Wire Line
 	6100 4600 6200 4600
 Wire Wire Line
 	6100 4200 6200 4200
-Entry Wire Line
-	6000 5700 6100 5800
-Entry Wire Line
-	6000 5500 6100 5600
-Entry Wire Line
-	6000 5300 6100 5400
-Entry Wire Line
-	6000 5100 6100 5200
-Entry Wire Line
-	6000 4900 6100 5000
-Entry Wire Line
-	6000 4700 6100 4800
-Entry Wire Line
-	6000 4500 6100 4600
-Entry Wire Line
-	6000 4300 6100 4400
-Entry Wire Line
-	6000 4100 6100 4200
-Entry Wire Line
-	6000 3900 6100 4000
-Entry Wire Line
-	6000 3450 6100 3350
-Entry Wire Line
-	6000 3250 6100 3150
-Entry Wire Line
-	6000 3050 6100 2950
-Entry Wire Line
-	6000 2850 6100 2750
-Entry Wire Line
-	6000 2650 6100 2550
-Entry Wire Line
-	6000 2450 6100 2350
-Entry Wire Line
-	6000 2250 6100 2150
-Entry Wire Line
-	6000 2050 6100 1950
-Entry Wire Line
-	6000 1850 6100 1750
-Entry Wire Line
-	6000 1650 6100 1550
 $Comp
-L LM3914 IC?
+L LM3914 IC2
 U 1 1 4E0A12DC
 P 6900 3900
-F 0 "IC?" H 6900 3800 60  0000 C CNN
+F 0 "IC2" H 6900 3800 60  0000 C CNN
 F 1 "LM3914" H 6900 5950 60  0000 C CNN
 	1    6900 3900
 	-1   0    0    1   
 $EndComp
 $Comp
-L 10SEGDISP BAR?
+L 10SEGDISP BAR2
 U 1 1 4E0A12D2
-P 6900 1450
-F 0 "BAR?" H 6900 3550 60  0000 C CNN
-F 1 "10SEGDISP" H 6900 1400 60  0000 C CNN
-	1    6900 1450
+P 6650 1450
+F 0 "BAR2" H 6650 3550 60  0000 C CNN
+F 1 "10SEGDISP" H 6650 1400 60  0000 C CNN
+	1    6650 1450
 	-1   0    0    1   
 $EndComp
 $Comp
