@@ -1,3 +1,8 @@
-EESchema-DOCLIB  Version 2.0  Date: 28/06/2011 18:48:02
+EESchema-DOCLIB  Version 2.0  Date: 29/06/2011 22:03:56
+#
+$CMP CD74HC4067
+D High-Speed CMOS Logic 16-Channel Analog Multiplexer/Demultiplexer
+K cmos logic multiplexer
+$ENDCMP
 #
 #End Doc Library
