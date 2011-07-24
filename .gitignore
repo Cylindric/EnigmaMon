@@ -3,3 +3,11 @@ $savepcb.brd
 *.bak
 *.bck
 *-cache.*
+*.s#?
+*.l#?
+*.b#?
+
+*.csproj.user
+*.suo
+Code/*/bin
+Code/*/obj
