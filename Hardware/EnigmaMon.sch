@@ -526,6 +526,7 @@
 <pin name="DCPRG" x="-15.24" y="15.24" length="middle"/>
 <pin name="VPRG" x="-15.24" y="-2.54" length="middle"/>
 <pin name="XERR" x="-15.24" y="-15.24" length="middle"/>
+<text x="-10.16" y="-25.4" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="VCC+GND">
 <pin name="VCC" x="2.54" y="2.54" length="middle" direction="pwr" rot="R180"/>
@@ -656,7 +657,7 @@ Pin-header for Arduino digital I/O pins</description>
 </devices>
 </deviceset>
 <deviceset name="TLC5940">
-<description>16-channel LED driver with dot-correction and grayscale PWM control</description>
+<description>&lt;b&gt;16-channel LED driver with dot-correction and grayscale PWM control&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="TLC5940" x="0" y="0"/>
 <gate name="G$2" symbol="VCC+GND" x="-33.02" y="5.08" addlevel="request"/>
@@ -6049,7 +6050,7 @@ Based on the following sources:
 <instance part="R_IREF" gate="G$1" x="22.86" y="-83.82" rot="R270"/>
 <instance part="SUPPLY25" gate="GND" x="22.86" y="-93.98"/>
 <instance part="SUPPLY26" gate="G$1" x="30.48" y="-25.4"/>
-<instance part="R_BLANK" gate="G$1" x="25.4" y="-38.1" rot="R270"/>
+<instance part="R_BLANK" gate="G$1" x="25.4" y="-40.64" rot="R270"/>
 <instance part="SUPPLY27" gate="GND" x="12.7" y="-45.72"/>
 <instance part="C2" gate="G$1" x="12.7" y="-35.56"/>
 </instances>
@@ -6495,7 +6496,7 @@ Based on the following sources:
 <pinref part="SUPPLY33" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
-<wire x1="25.4" y1="-33.02" x2="25.4" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="-35.56" x2="25.4" y2="-30.48" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="-30.48" x2="25.4" y2="-30.48" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="-27.94" x2="30.48" y2="-30.48" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="-30.48" x2="35.56" y2="-30.48" width="0.1524" layer="91"/>
@@ -6631,7 +6632,7 @@ Based on the following sources:
 <wire x1="66.04" y1="2.54" x2="71.12" y2="2.54" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="2.54" x2="71.12" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="-10.16" x2="15.24" y2="-10.16" width="0.1524" layer="91"/>
-<label x="33.02" y="-10.16" size="1.778" layer="95" rot="R180"/>
+<label x="17.78" y="-10.16" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="12"/>
@@ -6645,7 +6646,7 @@ Based on the following sources:
 <wire x1="66.04" y1="5.08" x2="73.66" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="5.08" x2="73.66" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="-12.7" x2="15.24" y2="-12.7" width="0.1524" layer="91"/>
-<label x="33.02" y="-12.7" size="1.778" layer="95" rot="R180"/>
+<label x="17.78" y="-12.7" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="11"/>
@@ -6826,7 +6827,7 @@ Based on the following sources:
 <net name="PWM_BLANK" class="0">
 <segment>
 <wire x1="38.1" y1="-50.8" x2="25.4" y2="-50.8" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="-50.8" x2="25.4" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="-50.8" x2="25.4" y2="-45.72" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="-50.8" x2="-2.54" y2="-50.8" width="0.1524" layer="91"/>
 <label x="-2.54" y="-50.8" size="1.778" layer="95"/>
 <pinref part="IC2" gate="G$1" pin="BLANK"/>
