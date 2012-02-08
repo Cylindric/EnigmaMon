@@ -7,6 +7,8 @@ $savepcb.brd
 *.l#?
 *.b#?
 
+eagleUp
+
 *.csproj.user
 *.suo
 Code/*/bin
