@@ -13602,9 +13602,18 @@ Based on the following sources:
 <instance part="RST" gate="G$1" x="66.04" y="154.94" rot="R90"/>
 <instance part="SUPPLY10" gate="GND" x="78.74" y="17.78"/>
 <instance part="IC3" gate="G$1" x="160.02" y="185.42"/>
-<instance part="Q1" gate="G$1" x="116.84" y="193.04" rot="R90"/>
-<instance part="C4" gate="G$1" x="106.68" y="198.12" rot="R90"/>
-<instance part="C5" gate="G$1" x="106.68" y="187.96" rot="R90"/>
+<instance part="Q1" gate="G$1" x="116.84" y="193.04" smashed="yes" rot="R90">
+<attribute name="NAME" x="118.872" y="192.532" size="1.778" layer="95"/>
+<attribute name="VALUE" x="119.38" y="195.58" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="C4" gate="G$1" x="106.68" y="198.12" smashed="yes" rot="R90">
+<attribute name="NAME" x="109.22" y="198.755" size="1.778" layer="95"/>
+<attribute name="VALUE" x="101.346" y="198.501" size="1.778" layer="96"/>
+</instance>
+<instance part="C5" gate="G$1" x="106.68" y="187.96" smashed="yes" rot="R90">
+<attribute name="NAME" x="112.268" y="187.325" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="106.68" y="187.325" size="1.778" layer="96" rot="R180"/>
+</instance>
 <instance part="SUPPLY2" gate="GND" x="99.06" y="182.88"/>
 </instances>
 <busses>
